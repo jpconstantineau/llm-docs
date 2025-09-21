@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <title>Kimi K2 (0711) | LLM Docs</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benchmark Prompt to compare model responses">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="http://localhost:1313/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
+<meta property="og:title" content="Kimi K2 (0711)" />
+<meta property="og:description" content="Benchmark Prompt to compare model responses" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/mmm/103-copy/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu_4b332ee273402be5.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2025-09-21T08:05:49-06:00" />
+<meta property="article:modified_time" content="2025-09-21T08:05:49-06:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu_4b332ee273402be5.png"/>
+<meta name="twitter:title" content="Kimi K2 (0711)"/>
+<meta name="twitter:description" content="Benchmark Prompt to compare model responses"/>
+
+    
+        <link rel="alternate" type="application/atom+xml" title="Atom feed for LLM Docs" href="/index.xml" />
+    
+    
+    
+            
+                <script type="text/javascript" src="http://localhost:1313/docs/js/flexsearch.bundle.js"></script>
+            
+        
+    
+    
+
+    <link rel="stylesheet" href="/docs/scss/style.css" crossorigin="anonymous">
+    
+    
+    </head>
+<body>
+        <div class="content">
+            <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/' aria-label="HomePage" alt="HomePage">
+            
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                    
+                        <li class="sidebar-dropdown no-icon current active">
+                            <button class="btn">
+                                Mythical Man Month
+                            </button>
+                            <div class="sidebar-submenu d-block">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/prompt/">Prompt</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/100/">Gemini 2.5 Flash (Thinking)</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/101/">Grok 4</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/102/">Claude  4 Sonnet</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class="current no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/103-copy/">Kimi K2 (0711)</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" no-icon"><a class="sidebar-nested-link" href="http://localhost:1313/docs/mmm/103/">Kimi K2 (0711)</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                    <main class="page-content bg-transparent">
+                        
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            
+            
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+            </ul>
+            
+        </div>
+    </div>
+    
+    
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
+    
+    
+</div>
+
+
+                            <div class="container-fluid">
+                                <div class="layout-spacing">
+                                    
+                                        <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/mmm/">
+                        <span itemprop="name">Mythical Man Month</span>
+                    </a>
+                    <meta itemprop="position" content='2' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Kimi K2 (0711)</span>
+                <meta itemprop="position" content='3' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                    
+                                    <div class="row flex-xl-nowrap">
+                                        
+                                        <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="TableOfContents"></nav>
+    </toc></div>
+                                        
+                                        
+                                        <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                            <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                                Table of Contents
+                                            </button>
+<nav id="toc-mobile"></nav></div>
+                                        <div class="docs-content col-12  mt-0">
+                                            <div class="mb-0 d-flex">
+                                                
+                                                <h1 class="content-title mb-0">
+                                                    Kimi K2 (0711)
+                                                    
+                                                </h1>
+                                            </div>
+                                            
+                                            <div id="content" class="main-content" >
+                                                
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <p>The Mythical Man-Month – 50-Year Perspective<br>
+(Original 1975 text + 1995 Anniversary Essays)</p>
+<p>────────────────────────────────────────</p>
+<ol>
+<li>Ultra-Short Summary of the Original Book
+• Adding people to a late project makes it later (“Brooks’ Law”).<br>
+• The “man-month” is a fallacious unit of work; software effort is not linearly divisible.<br>
+• Conceptual integrity is the prime quality; one mind (or a small architecture team) must own the design.<br>
+• Build the system twice: a quick throw-away to learn, then the real one.<br>
+• Plan to throw one away—you will anyway.<br>
+• The “second-system effect”: the second version tends to be over-designed.<br>
+• No silver bullet: there is no single technology or practice that will give an order-of-magnitude productivity gain.<br>
+• Documentation (especially specifications) is part of the product, not overhead.<br>
+• Communication overhead grows as n(n-1)/2; keep teams small and partition work cleanly.<br>
+• Milestones must be concrete, measurable, and under the control of the team producing them.</li>
+</ol>
+<p>────────────────────────────────────────
+2. New or Expanded Points in the 1995 Anniversary Edition
+• “No Silver Bullet—Refired”: Brooks re-affirms that even after 20 years of progress (OO, AI, 4GLs, etc.) the essence—complexity, conformity, changeability, invisibility—remains.<br>
+• Incremental development is explicitly endorsed (a major shift from the original “build it twice” advice).<br>
+• Rapid prototyping is now encouraged instead of the literal “plan to throw one away.”<br>
+• Risk management and buying vs. building are discussed.<br>
+• The role of the “surgical team” is softened; modern teams are cross-functional and self-organizing.<br>
+• Recognition that software maintenance is the dominant life-cycle cost, so design for change.<br>
+• Acknowledges the rise of open-source and reusable components.</p>
+<p>────────────────────────────────────────
+3. Which Lessons Still Hold—and How Agile &amp; Waterfall Context Changes Them</p>
+<p>Original Lesson → Modern Interpretation<br>
+• Man-month myth → Agile: stable, persistent teams; velocity measured in story points, not “ideal hours.” Waterfall: still dangerous to staff-up late phases.<br>
+• Conceptual integrity → Agile: architecture runway and intentional architecture (SAFe), domain-driven design bounded contexts. Waterfall: still need a chief architect, but architecture evolves via change-control boards.<br>
+• Second-system effect → Agile: MVP culture and thin vertical slices reduce gold-plating. Waterfall: still visible in “Release 2.0” bloat; counter with scope triage gates.<br>
+• Plan to throw one away → Agile: spikes, prototypes, and evolutionary architecture make the “throw-away” continuous and low-cost. Waterfall: proof-of-concept phase before committing budget.<br>
+• Communication overhead → Agile: daily stand-ups, information radiators, pair programming reduce formal meetings. Waterfall: still need interface control documents, but use collaborative wikis instead of paper specs.<br>
+• No silver bullet → Still true; DevOps, micro-services, and AI coding assistants give incremental gains, not 10×.<br>
+• Documentation → Agile: living documentation in code, tests, and lightweight ADRs. Waterfall: still needs heavier compliance docs, but generate them from single source (docs-as-code).<br>
+• Milestones → Agile: working software every iteration; definition of done. Waterfall: phase gates tied to demonstrable artifacts, not calendar dates.</p>
+<p>────────────────────────────────────────
+4. Key Learnings by Role</p>
+<p>Project Manager<br>
+• Protect the schedule from “just add people” pressure; use Little’s Law and flow metrics instead of Gantt buffers.<br>
+• Replace “percentage complete” with demonstrable increments every 1–4 weeks.<br>
+• Budget for communication overhead; co-locate or use high-bandwidth tooling when scaling.<br>
+• Use risk burndown charts; revisit staffing assumptions continuously.</p>
+<p>Engineering Manager<br>
+• Guard conceptual integrity via architecture owner(s) in each squad; run architecture decision records (ADRs) visible to all.<br>
+• Keep team size ≤ 9 (Brooks’ surgical team updated by Dunbar’s number).<br>
+• Institutionalize refactoring sprints to avoid second-system bloat.<br>
+• Measure lead time and cycle time; resist adding bodies to improve these metrics.</p>
+<p>Solutions Architect<br>
+• Design for change: modular boundaries, API versioning, feature toggles.<br>
+• Create “just enough” up-front architecture to enable autonomous squads (Agile) or to pass phase-gate reviews (Waterfall).<br>
+• Prototype high-risk areas early; treat prototypes as executable specs.<br>
+• Document trade-offs in lightweight, version-controlled artifacts.</p>
+<p>Software Developer<br>
+• Expect to throw away code—write it so it’s cheap to delete (small functions, good tests).<br>
+• Fight the second-system effect in your own pull requests: YAGNI.<br>
+• Communicate: prefer pairing/mobbing over asynchronous docs when possible.<br>
+• Track personal WIP limits to reduce context-switch overhead.</p>
+<p>Executives / C-Suite<br>
+• No silver bullet: budget for steady, continuous investment in tooling, training, and technical debt reduction.<br>
+• Accept that initial estimates are distributions, not single numbers; use forecasting (Monte-Carlo) instead of deterministic dates.<br>
+• Reward teams for sustainable pace and quality metrics, not heroics.<br>
+• Understand that scaling with people is sub-linear; prefer product-line thinking and platform reuse over project staffing.</p>
+<p>────────────────────────────────────────
+5. One-Slide Recap
+“Adding people to a late project makes it later” is still true, but today we mitigate it with small, stable, cross-functional teams delivering thin vertical slices every iteration. Conceptual integrity remains non-negotiable, yet we achieve it through evolutionary architecture and continuous communication rather than heavyweight sign-offs. The essence of software—complexity, change, and invisibility—has not been silver-bulleted by 50 years of tools; disciplined process and human judgment still rule.</p>
+
+    </div>
+
+    
+
+    
+                                            </div>
+                                            <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/docs/mmm/102/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Claude  4 Sonnet</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/mmm/103/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Kimi K2 (0711) <i class="material-icons align-middle">navigate_next</i></p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+            </div>
+        </div>
+
+        
+        
+        <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+        
+        
+
+        
+        
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    <script src="/docs/js/bootstrap.js" defer></script>
+
+
+    <script type="text/javascript" src="http://localhost:1313/docs/js/bundle.js" defer></script>
+
+        
+
+        
+        <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/mmm\/prompt\/",
+                title: "Prompt",
+                description: "Benchmark Prompt to compare model responses",
+                content: "Provide a summary of the key points of the book “the mythical man month”. Also Provide key points that were provided in the anniversary edition that were not in the original edition. Highlight lessons that still are valid today but with additional context and knowledge from agile vs waterfall software project delivery methods. Provide key learnings for the following roles: project manager, engineering manager, solutions architect, software developer, executives\n"
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/mmm\/100\/",
+                title: "Gemini 2.5 Flash (Thinking)",
+                description: "Benchmark Prompt to compare model responses",
+                content: "“The Mythical Man-Month: Essays on Software Engineering” by Frederick Brooks Jr. is a seminal work in software project management. Drawing from his experience managing the IBM System/360 project in the 1960s, Brooks offers timeless insights into the challenges and complexities of large-scale software development.\nKey Points from the Original Edition link Brooks’s Law: “Adding manpower to a late software project makes it later.” This is arguably the most famous insight. It posits that new personnel require ramp-up time, and adding more people to an already late project significantly increases communication overhead, making the project even further behind schedule. The Second-System Effect: Developers, after successfully completing a first system (often with compromises), tend to over-design the second system, incorporating all the “bells and whistles” they couldn’t include initially. This often leads to bloat, complexity, and schedule slippage. Conceptual Integrity: The importance of a single, unifying architectural vision. Brooks argues that a system’s conceptual integrity is paramount for its usability, consistency, and maintainability. This is best achieved by a small group of architects or a chief programmer who makes the key design decisions. The Surgical Team: Advocates for a small, highly skilled, and tightly integrated team (like a surgical team) led by a chief programmer. This structure minimizes communication overhead and maximizes productivity by leveraging individual expertise. The Tar Pit: Software development is inherently difficult and complex. Brooks describes it as a “tar pit,” where projects get bogged down due to unforeseen complexities and the inherent difficulty of the task. “Build One to Throw Away”: The idea that the first system built is often a prototype that reveals flaws and misunderstandings, and that a truly robust system should be the second iteration built based on the lessons learned from the first. Documentation and Communication: Emphasizes the critical role of clear, comprehensive documentation and robust communication channels, especially in large projects, to ensure everyone understands the system and its components. Programmer Productivity: Brooks discusses factors affecting productivity, highlighting that it’s not linearly scalable with the number of people and is highly dependent on individual skill, tools, and the absence of distractions. Key Points from the Anniversary Edition (20th and 30th) linkThe later anniversary editions, particularly the 20th and 30th, include updated essays, most notably “No Silver Bullet — Essence and Accident” and \" ‘No Silver Bullet’ Refired.\" These sections provide reflections on the original text and new insights:\nReaffirmation of Brooks’s Law: Brooks states that, even with advancements in tools and methodologies, Brooks’s Law remains fundamentally true. The challenges of communication and ramp-up time for new team members persist. “No Silver Bullet” Revisited: This essay argues that there is no single technological or managerial breakthrough that will dramatically improve software productivity by orders of magnitude. Brooks distinguishes between the “essence” (inherent difficulties like complexity, conformity, changeability, invisibility) and “accidents” (difficulties due to current tools or methods). He concludes that most progress has been made on the “accidents.” In the “Refired” essay, he re-examines progress, noting that while some tools (like object-oriented programming, IDEs, COTS components) have helped, they haven’t been the “silver bullet” to solve the fundamental “essence” of software complexity. The Importance of Design: Despite the rise of rapid prototyping, Brooks reaffirms the enduring value of thoughtful, upfront design to ensure conceptual integrity and manage complexity. Incremental Development: While his original work was rooted in a more phased development model, Brooks acknowledges the benefits of incremental development, where a system evolves through multiple iterations, implicitly touching on concepts that would later become central to agile methodologies. Focus on People: He re-emphasizes that the human element—talent, communication, and team organization—remains the single most critical factor in software project success, more so than tools or processes. The Tar Pit Still Exists: Despite decades of progress, large-scale software development remains an intrinsically challenging endeavor, prone to underestimation and unforeseen problems. Lessons Still Valid Today: Agile vs. Waterfall Context linkMany of Brooks’s insights remain profoundly relevant, offering critical context when considering modern software development methodologies like Agile, especially in contrast to traditional Waterfall approaches.\nBrooks’s Law (Adding Manpower to a Late Project):\nWaterfall: Directly applicable. In a Waterfall model, phases are sequential. Adding people late, especially during integration or testing phases, catastrophically increases communication paths and the overhead of bringing new people up to speed, almost guaranteeing further delays. Agile: Still valid, but nuanced. Agile teams strive for small, stable teams (e.g., 5-9 people in Scrum). While adding people mid-sprint can still disrupt flow and require ramp-up, Agile’s iterative nature and shorter feedback loops can mitigate the impact. It’s often easier to scale by adding new teams (with careful coordination between them) rather than simply adding more individuals to an existing team. Agile’s emphasis on cross-functional teams and shared understanding also helps manage the integration of new members more smoothly over time. Modern Relevance: No matter the methodology, understand that communication overhead scales poorly. Organic growth of teams, or adding new, self-sufficient teams, is generally more effective than “throwing bodies” at a struggling project. Conceptual Integrity:\nWaterfall: Crucial. A single architect or design authority ensures consistency across a large, upfront design. Without it, the final system can become fragmented and incoherent. Agile: Still critical, but achieved differently. Instead of a single “grand architect” dictating everything upfront, Agile promotes emergent design, shared ownership, and continuous refactoring. A “technical lead,” “architectural guild,” or strong senior developers within teams guide the architecture incrementally. The Product Owner ensures the conceptual integrity of the product vision and value, while the team’s collective ownership and focus on the “Definition of Done” help maintain technical coherence. Modern Relevance: The need for a coherent vision, whether it’s called “architecture” or “shared understanding,” remains paramount. Without it, even small, agile increments can lead to an unmaintainable tangle. The Surgical Team / Small, Focused Teams:\nWaterfall: Advocated for highly skilled, small core teams for critical system components, often with a chief programmer. Agile: This is a cornerstone of Agile. Scrum teams are typically small (5-9 people), cross-functional, and self-organizing, aligning perfectly with Brooks’s idea of a cohesive, highly productive unit. This structure inherently reduces communication paths and fosters collective ownership. Modern Relevance: The efficiency and productivity benefits of small, dedicated, cross-functional teams are universally recognized across all development paradigms. “Build One to Throw Away” / Prototyping:\nWaterfall: Often involved a distinct “prototype” phase to validate concepts before full-scale development, but this was sometimes skipped due to time pressure. Agile: This concept is deeply embedded in Agile. Each sprint produces a potentially shippable increment, which serves as a living “prototype” that gathers continuous feedback. The entire iterative development process, including MVPs (Minimum Viable Products) and frequent releases, embodies the idea of building, learning, and refining, evolving the product rather than discarding a single large prototype. Modern Relevance: The value of early and continuous feedback, and the understanding that initial designs are often flawed, is a fundamental tenet of modern product development. The Tar Pit / Inherent Complexity:\nWaterfall: Often attempted to anticipate and “engineer out” all complexity upfront, leading to massive design documents and brittle plans that fractured upon encountering real-world implementation challenges. Agile: Acknowledges the inherent, irreducible complexity of software. Instead of trying to eliminate it upfront, Agile provides tools and processes (iterative development, short feedback loops, continuous integration, refactoring) to manage and adapt to complexity as it unfolds, reducing risk and allowing for flexibility. Modern Relevance: Software remains inherently complex. Agile doesn’t eliminate the “tar pit” but provides a more adaptable and resilient approach to navigating its challenges. No Silver Bullet:\nBoth: Brooks’s warning remains highly valid. Neither Waterfall nor Agile (nor DevOps, AI, etc.) is a magical solution that eliminates the fundamental difficulties of software development. Modern Relevance: The enduring challenges are human-centric: clear communication, skilled personnel, effective leadership, and disciplined execution. Tools and methodologies are enablers, not panaceas. The best teams, regardless of methodology, are those that understand the “essence” of software complexity and continuously learn and adapt. In conclusion, “The Mythical Man-Month” provides foundational wisdom that transcends specific methodologies. While the implementation of solutions has evolved (e.g., from a single architect to emergent design in Agile), the underlying problems and principles Brooks identified remain highly relevant for anyone involved in software project delivery today.\n"
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/mmm\/101\/",
+                title: "Grok 4",
+                description: "Benchmark Prompt to compare model responses",
+                content: "Below is a comprehensive response to your query about The Mythical Man-Month: Essays on Software Engineering by Frederick P. Brooks Jr. This classic book, first published in 1975, draws from Brooks’ experiences managing the IBM System/360 project. It explores the challenges of large-scale software development. The 20th anniversary edition (1995) added new material reflecting on the original ideas and incorporating updates based on industry evolution. I’ll structure this as requested: a summary of key points from the original edition, additions in the anniversary edition, lessons that remain valid today (with context on agile vs. waterfall methodologies), and tailored key learnings for specific roles.\nMy summary is based on the book’s well-established content, which has not fundamentally changed since its publications. If you’re looking for interpretations or analyses post-2024, let me know, and I can refine this.\nSummary of Key Points from the Original Edition (1975) linkThe book is a collection of essays focusing on why software projects often fail or overrun, emphasizing human and organizational factors over technical ones. Here are the core ideas:\nThe Mythical Man-Month: Software development effort is not easily interchangeable or scalable. Brooks argues that “man-months” (a unit of work) are mythical because people and months aren’t fungible. Adding more people to a late project increases communication overhead and training time, often making it even later (known as Brooks’ Law: “Adding manpower to a late software project makes it later”).\nConceptual Integrity: The most important property of a system is its conceptual integrity— a unified design vision. This is best achieved by having a single “chief architect” or small team to maintain consistency, rather than design-by-committee.\nThe Second-System Effect: When building a follow-up system, developers tend to overdesign it with unnecessary features, based on lessons from the first system. This leads to bloat and delays. Brooks advises restraint and prioritization.\nPlan to Throw One Away: Pilot systems or prototypes are essential because the first version will inevitably have flaws. Build with the expectation of iteration or replacement.\nCommunication and Organization: Large teams require structured communication (e.g., formal documentation, meetings). Brooks discusses team structures like the “surgical team” model, where a small core team handles most work, supported by specialists.\nTime Estimation and Scheduling: Software tasks are hard to estimate due to their intellectual nature. He recommends allocating time as follows: 1/3 planning, 1/6 coding, 1/4 component testing, and 1/4 system testing. Optimism in estimates is a common pitfall.\nNo Silver Bullet: In an added essay (often associated with the book), Brooks argues there’s no single technology or method that can make software development an order of magnitude easier within a decade, due to inherent complexities like accidental vs. essential difficulties.\nThe book uses anecdotes from the OS/360 project to illustrate that software engineering is as much about managing people as code.\nKey Points Added in the Anniversary Edition (1995) linkThe anniversary edition reprints the original text and adds four new chapters, plus reflections on how the ideas held up after 20 years. These additions were not in the 1975 edition and provide retrospective analysis:\nReflections on “No Silver Bullet”: Brooks revisits his famous 1986 essay (included here), admitting some progress in areas like high-level languages and object-oriented programming but standing by his thesis: no revolutionary “silver bullet” emerged. He discusses “accidental” improvements (e.g., better tools) vs. unchanging “essential” complexities (e.g., managing requirements changes).\nThe State of Software Engineering: A new chapter assesses industry progress, noting advancements in prototyping, incremental development, and user interfaces. Brooks praises the rise of packaged software and reusable components but critiques persistent issues like poor estimation and overambitious projects.\nPropositions of the Book, Revisited: Brooks evaluates his original claims. For example, he confirms Brooks’ Law still applies but notes exceptions in modern contexts like distributed teams. He adds nuance to conceptual integrity, suggesting it can be maintained in larger, more collaborative environments with better tools.\nPersonal Reflections and Predictions: Brooks discusses how the book influenced fields beyond software (e.g., product design) and predicts future trends like increased emphasis on user-centered design and the impact of visual programming. He also addresses criticisms, such as the book’s focus on large-scale projects, and extends ideas to smaller teams.\nThese additions make the edition more forward-looking, acknowledging 1990s innovations like rapid prototyping while reinforcing timeless principles.\nLessons That Remain Valid Today, with Agile vs. Waterfall Context linkMany of Brooks’ ideas predate modern methodologies but remain highly relevant in 2025’s software landscape. The original book aligns more with waterfall approaches (sequential, plan-heavy, used in big projects like OS/360), emphasizing upfront planning and hierarchical teams. However, agile methodologies (iterative, flexible, customer-focused, popularized in the 2000s) address some of Brooks’ pain points while validating others. Here’s how key lessons hold up, with added context:\nBrooks’ Law and Scalability: Still valid—ramping up teams mid-project disrupts flow. In waterfall, this manifests as rigid schedules crumbling under added resources. Agile mitigates it via self-organizing teams, short sprints, and continuous integration, but even agile projects suffer if you “throw people at problems” without proper onboarding. Modern context: With remote work and tools like GitHub or Jira, communication overhead is lower, but cultural mismatches (e.g., in distributed global teams) can amplify delays.\nConceptual Integrity: Enduring advice for maintaining a coherent vision. Waterfall enforces this through detailed specs, but it can lead to inflexibility. Agile promotes it via product owners and iterative feedback, allowing evolution without losing unity. Today, with microservices and cloud architectures, integrity is challenged by distributed systems—lessons from Brooks encourage tools like design systems (e.g., atomic design) to preserve it.\nPlan to Throw One Away (Iteration): Highly relevant; agile embodies this with MVPs (Minimum Viable Products) and rapid prototyping. Waterfall often skips this, leading to costly rework. In 2025, AI-assisted coding (e.g., GitHub Copilot) accelerates prototyping, but Brooks’ warning against over-optimism holds—essential complexity persists despite tools.\nNo Silver Bullet: Proven prescient; agile isn’t a panacea (it can devolve into “agilefall” hybrids). Modern additions like DevOps, AI/ML, and low-code platforms reduce accidental difficulties, but essential ones (e.g., changing requirements, human error) remain. Agile’s emphasis on adaptability complements Brooks’ ideas better than rigid waterfall, but both warn against hype—e.g., over-relying on AI without addressing team dynamics.\nEstimation and Scheduling: Still a weak spot; waterfall’s Gantt charts often fail due to unknowns, while agile’s story points and velocity tracking provide better empiricism. With today’s data analytics (e.g., from tools like Azure DevOps), estimates are more accurate, but Brooks’ 1/3 planning rule applies: under-planning leads to chaos in any method.\nOverall, Brooks’ lessons favor agile’s flexibility for most projects today, but waterfall suits regulated environments (e.g., aerospace). The key modern takeaway: Hybrid approaches (e.g., scaled agile like SAFe) blend both, but human factors like communication remain the bottleneck.\nKey Learnings for Specific Roles linkHere are tailored insights from the book, incorporating anniversary additions and modern agile/waterfall context. These focus on actionable advice.\nProject Manager:\nApply Brooks’ Law by scaling teams gradually and using agile sprints to manage additions without derailing progress (vs. waterfall’s all-at-once hires). Enforce conceptual integrity through clear roadmaps; in agile, facilitate backlog grooming to avoid feature creep. Use the time allocation rule for realistic scheduling—dedicate more to planning/testing. Learning: Optimism kills projects; build buffers for the unexpected. Engineering Manager:\nAdopt the “surgical team” model for efficiency: empower a core group with support roles. In agile, this aligns with cross-functional squads; in waterfall, with specialized phases. Combat the second-system effect by enforcing prioritization (e.g., via agile’s MoSCoW method: Must-have, Should-have, etc.). Learning: Foster communication to reduce overhead—use tools like Slack or retrospectives. Brooks’ reflections emphasize mentoring to build resilient teams. Solutions Architect:\nPrioritize conceptual integrity as the “chief architect”—design for simplicity and extensibility. In agile, iterate designs via spikes; in waterfall, via detailed blueprints. Embrace “plan to throw one away” by prototyping early to validate assumptions, especially in complex systems like microservices. Learning: Avoid overdesign; anniversary additions highlight reusable components (e.g., APIs) as a way to tame essential complexity in modern cloud environments. Software Developer:\nRecognize that coding is only ~1/6 of the work—focus on testing and collaboration. Agile’s pair programming reduces isolation; waterfall’s docs ensure knowledge transfer. Learn from the no-silver-bullet idea: Tools help, but craftsmanship matters. Use AI aids wisely, not as crutches. Learning: Document as you go to aid team scaling (per Brooks’ Law). Anniversary insights praise incremental builds, aligning with CI/CD pipelines. Executives:\nUnderstand that software isn’t like manufacturing—man-months are mythical, so avoid pressuring for quick fixes. Support agile for adaptability or waterfall for predictability based on project needs. Invest in conceptual integrity to deliver user value; anniversary predictions on user-centered design resonate with today’s UX focus. Learning: No silver bullet means sustainable pacing over hype. Fund prototyping and training to avoid costly failures; measure success by outcomes, not just deadlines. If you’d like quotes from the book, expansions on any point, or related recommendations (e.g., Peopleware or The Agile Manifesto), let me know!\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/mmm\/102\/",
+                title: "Claude  4 Sonnet",
+                description: "Benchmark Prompt to compare model responses",
+                content: "Based on my search results and knowledge of “The Mythical Man-Month,” I’ll provide a comprehensive summary covering all the aspects you requested.\nThe Mythical Man-Month: Key Points and Modern Relevance linkCore Concepts from the Original Book (1975) link1. Brooks’s Law link“Adding manpower to a late software project makes it later.” This is the central thesis - that man-hours and calendar time are not interchangeable in software development due to:\nCommunication overhead: As team size increases, communication paths grow exponentially ( n(n-1)/2 ) Non-partitionable tasks: Many programming tasks cannot be divided among multiple workers Training time: New team members require time to understand the project 2. The Second-System Effect linkThe second system an architect designs is the most dangerous because they tend to over-engineer it, incorporating all the features they couldn’t include in the first system due to constraints.\n3. Conceptual Integrity linkSystems must have unified design vision, typically maintained by a single architect or small team of architects who make key decisions about what goes in and what stays out.\n4. The Surgical Team Model linkProposes organizing teams around a “surgeon” (chief programmer) supported by specialists, rather than having everyone contribute equally.\n5. Progress Tracking link“How does a project get to be one year late? One day at a time!” Emphasizes the importance of tracking small milestones consistently.\nAnniversary Edition Additions (1995) linkThe 20th anniversary edition added four new chapters:\n1. “No Silver Bullet” Essay linkBrooks predicted that no single programming technique would bring order-of-magnitude improvements in software productivity within a decade. This prediction proved accurate and remains relevant today.\n2. Essence vs. Accidental Complexity linkDistinguished between:\nEssential complexity: Inherent to the problem being solved Accidental complexity: Arising from tools, languages, and implementation details 3. Prescient Observations about Agile linkBrooks identified helpful trends that later became core Agile principles:\nRequirements refinement and rapid prototyping Incremental development (“grow, not build” software) Focus on people over process 4. Retrospective Analysis linkBrooks catalogued his original propositions and reflected on which remained valid after 20 years.\nLessons Valid Today with Agile/Waterfall Context linkStill Highly Relevant: link Communication complexity - Even more critical in distributed/remote teams Conceptual integrity - Essential for microservices and API design People over process - Core Agile principle that Brooks anticipated Incremental development - Foundation of modern iterative methodologies Enhanced by Modern Context: link Brooks’s Law applies differently:\nWaterfall: Adding people late in development is still problematic Agile: Cross-functional teams and pair programming can mitigate some issues, but core principle remains The Surgical Team evolved into:\nScrum teams with Product Owners and Scrum Masters DevOps with embedded specialists Platform teams supporting multiple product teams Role-Specific Key Learnings linkProject Managers link Focus on small, measurable milestones rather than large deliverables Resist pressure to add resources to late projects without careful analysis Invest heavily in communication structures and documentation Plan for the “pilot system” - accept that first versions will likely be thrown away Track progress daily to prevent “one day at a time” slippage Engineering Managers link Prioritize team communication and knowledge sharing Maintain conceptual integrity through architectural oversight Build surgical teams with clear roles and specializations Invest in tooling and automation to reduce accidental complexity Focus on hiring and developing great designers, not just coders Solutions Architects link Maintain unified vision across the system Document architectural decisions clearly and accessibly Resist second-system effect by staying disciplined about scope Design for modularity to enable parallel development Separate architecture from implementation to maintain flexibility Software Developers link Write self-documenting code with clear variable names and structure Focus on representation - how you model the problem is crucial Embrace incremental development and rapid prototyping Understand that complexity is inherent - good software is necessarily complex Invest in understanding the business problem deeply Executives link Understand that software scaling is non-linear - doubling team size doesn’t double output Invest in great people rather than just more people Support architectural integrity even when it seems to slow initial development Plan for iterative delivery rather than big-bang releases Recognize that the essential complexity of software problems cannot be eliminated, only managed Modern Implications linkThe book’s core insights remain remarkably relevant because they address fundamental human and organizational challenges rather than just technical ones. In today’s context:\nAgile methodologies have adopted many of Brooks’s recommendations (incremental development, people over process) DevOps practices address some communication overhead through automation and shared tooling Microservices architecture requires even more attention to conceptual integrity across service boundaries Remote work has amplified communication challenges Brooks identified The “Mythical Man-Month” endures because it recognizes that software development is fundamentally about human creativity and collaboration, not just technical execution. As Brooks noted in his retrospective: “People are everything.”\n"
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/mmm\/103-copy\/",
+                title: "Kimi K2 (0711)",
+                description: "Benchmark Prompt to compare model responses",
+                content: "The Mythical Man-Month – 50-Year Perspective\n(Original 1975 text + 1995 Anniversary Essays)\n────────────────────────────────────────\nUltra-Short Summary of the Original Book • Adding people to a late project makes it later (“Brooks’ Law”).\n• The “man-month” is a fallacious unit of work; software effort is not linearly divisible.\n• Conceptual integrity is the prime quality; one mind (or a small architecture team) must own the design.\n• Build the system twice: a quick throw-away to learn, then the real one.\n• Plan to throw one away—you will anyway.\n• The “second-system effect”: the second version tends to be over-designed.\n• No silver bullet: there is no single technology or practice that will give an order-of-magnitude productivity gain.\n• Documentation (especially specifications) is part of the product, not overhead.\n• Communication overhead grows as n(n-1)/2; keep teams small and partition work cleanly.\n• Milestones must be concrete, measurable, and under the control of the team producing them. ──────────────────────────────────────── 2. New or Expanded Points in the 1995 Anniversary Edition • “No Silver Bullet—Refired”: Brooks re-affirms that even after 20 years of progress (OO, AI, 4GLs, etc.) the essence—complexity, conformity, changeability, invisibility—remains.\n• Incremental development is explicitly endorsed (a major shift from the original “build it twice” advice).\n• Rapid prototyping is now encouraged instead of the literal “plan to throw one away.”\n• Risk management and buying vs. building are discussed.\n• The role of the “surgical team” is softened; modern teams are cross-functional and self-organizing.\n• Recognition that software maintenance is the dominant life-cycle cost, so design for change.\n• Acknowledges the rise of open-source and reusable components.\n──────────────────────────────────────── 3. Which Lessons Still Hold—and How Agile \u0026 Waterfall Context Changes Them\nOriginal Lesson → Modern Interpretation\n• Man-month myth → Agile: stable, persistent teams; velocity measured in story points, not “ideal hours.” Waterfall: still dangerous to staff-up late phases.\n• Conceptual integrity → Agile: architecture runway and intentional architecture (SAFe), domain-driven design bounded contexts. Waterfall: still need a chief architect, but architecture evolves via change-control boards.\n• Second-system effect → Agile: MVP culture and thin vertical slices reduce gold-plating. Waterfall: still visible in “Release 2.0” bloat; counter with scope triage gates.\n• Plan to throw one away → Agile: spikes, prototypes, and evolutionary architecture make the “throw-away” continuous and low-cost. Waterfall: proof-of-concept phase before committing budget.\n• Communication overhead → Agile: daily stand-ups, information radiators, pair programming reduce formal meetings. Waterfall: still need interface control documents, but use collaborative wikis instead of paper specs.\n• No silver bullet → Still true; DevOps, micro-services, and AI coding assistants give incremental gains, not 10×.\n• Documentation → Agile: living documentation in code, tests, and lightweight ADRs. Waterfall: still needs heavier compliance docs, but generate them from single source (docs-as-code).\n• Milestones → Agile: working software every iteration; definition of done. Waterfall: phase gates tied to demonstrable artifacts, not calendar dates.\n──────────────────────────────────────── 4. Key Learnings by Role\nProject Manager\n• Protect the schedule from “just add people” pressure; use Little’s Law and flow metrics instead of Gantt buffers.\n• Replace “percentage complete” with demonstrable increments every 1–4 weeks.\n• Budget for communication overhead; co-locate or use high-bandwidth tooling when scaling.\n• Use risk burndown charts; revisit staffing assumptions continuously.\nEngineering Manager\n• Guard conceptual integrity via architecture owner(s) in each squad; run architecture decision records (ADRs) visible to all.\n• Keep team size ≤ 9 (Brooks’ surgical team updated by Dunbar’s number).\n• Institutionalize refactoring sprints to avoid second-system bloat.\n• Measure lead time and cycle time; resist adding bodies to improve these metrics.\nSolutions Architect\n• Design for change: modular boundaries, API versioning, feature toggles.\n• Create “just enough” up-front architecture to enable autonomous squads (Agile) or to pass phase-gate reviews (Waterfall).\n• Prototype high-risk areas early; treat prototypes as executable specs.\n• Document trade-offs in lightweight, version-controlled artifacts.\nSoftware Developer\n• Expect to throw away code—write it so it’s cheap to delete (small functions, good tests).\n• Fight the second-system effect in your own pull requests: YAGNI.\n• Communicate: prefer pairing/mobbing over asynchronous docs when possible.\n• Track personal WIP limits to reduce context-switch overhead.\nExecutives / C-Suite\n• No silver bullet: budget for steady, continuous investment in tooling, training, and technical debt reduction.\n• Accept that initial estimates are distributions, not single numbers; use forecasting (Monte-Carlo) instead of deterministic dates.\n• Reward teams for sustainable pace and quality metrics, not heroics.\n• Understand that scaling with people is sub-linear; prefer product-line thinking and platform reuse over project staffing.\n──────────────────────────────────────── 5. One-Slide Recap “Adding people to a late project makes it later” is still true, but today we mitigate it with small, stable, cross-functional teams delivering thin vertical slices every iteration. Conceptual integrity remains non-negotiable, yet we achieve it through evolutionary architecture and continuous communication rather than heavyweight sign-offs. The essence of software—complexity, change, and invisibility—has not been silver-bulleted by 50 years of tools; disciplined process and human judgment still rule.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/mmm\/103\/",
+                title: "Kimi K2 (0711)",
+                description: "Benchmark Prompt to compare model responses",
+                content: "The Mythical Man-Month – 50-Year Perspective\n(Original 1975 text + 1995 Anniversary Essays)\n────────────────────────────────────────\nUltra-Short Summary of the Original Book • Adding people to a late project makes it later (“Brooks’ Law”).\n• The “man-month” is a fallacious unit of work; software effort is not linearly divisible.\n• Conceptual integrity is the prime quality; one mind (or a small architecture team) must own the design.\n• Build the system twice: a quick throw-away to learn, then the real one.\n• Plan to throw one away—you will anyway.\n• The “second-system effect”: the second version tends to be over-designed.\n• No silver bullet: there is no single technology or practice that will give an order-of-magnitude productivity gain.\n• Documentation (especially specifications) is part of the product, not overhead.\n• Communication overhead grows as n(n-1)/2; keep teams small and partition work cleanly.\n• Milestones must be concrete, measurable, and under the control of the team producing them. ──────────────────────────────────────── 2. New or Expanded Points in the 1995 Anniversary Edition • “No Silver Bullet—Refired”: Brooks re-affirms that even after 20 years of progress (OO, AI, 4GLs, etc.) the essence—complexity, conformity, changeability, invisibility—remains.\n• Incremental development is explicitly endorsed (a major shift from the original “build it twice” advice).\n• Rapid prototyping is now encouraged instead of the literal “plan to throw one away.”\n• Risk management and buying vs. building are discussed.\n• The role of the “surgical team” is softened; modern teams are cross-functional and self-organizing.\n• Recognition that software maintenance is the dominant life-cycle cost, so design for change.\n• Acknowledges the rise of open-source and reusable components.\n──────────────────────────────────────── 3. Which Lessons Still Hold—and How Agile \u0026 Waterfall Context Changes Them\nOriginal Lesson → Modern Interpretation\n• Man-month myth → Agile: stable, persistent teams; velocity measured in story points, not “ideal hours.” Waterfall: still dangerous to staff-up late phases.\n• Conceptual integrity → Agile: architecture runway and intentional architecture (SAFe), domain-driven design bounded contexts. Waterfall: still need a chief architect, but architecture evolves via change-control boards.\n• Second-system effect → Agile: MVP culture and thin vertical slices reduce gold-plating. Waterfall: still visible in “Release 2.0” bloat; counter with scope triage gates.\n• Plan to throw one away → Agile: spikes, prototypes, and evolutionary architecture make the “throw-away” continuous and low-cost. Waterfall: proof-of-concept phase before committing budget.\n• Communication overhead → Agile: daily stand-ups, information radiators, pair programming reduce formal meetings. Waterfall: still need interface control documents, but use collaborative wikis instead of paper specs.\n• No silver bullet → Still true; DevOps, micro-services, and AI coding assistants give incremental gains, not 10×.\n• Documentation → Agile: living documentation in code, tests, and lightweight ADRs. Waterfall: still needs heavier compliance docs, but generate them from single source (docs-as-code).\n• Milestones → Agile: working software every iteration; definition of done. Waterfall: phase gates tied to demonstrable artifacts, not calendar dates.\n──────────────────────────────────────── 4. Key Learnings by Role\nProject Manager\n• Protect the schedule from “just add people” pressure; use Little’s Law and flow metrics instead of Gantt buffers.\n• Replace “percentage complete” with demonstrable increments every 1–4 weeks.\n• Budget for communication overhead; co-locate or use high-bandwidth tooling when scaling.\n• Use risk burndown charts; revisit staffing assumptions continuously.\nEngineering Manager\n• Guard conceptual integrity via architecture owner(s) in each squad; run architecture decision records (ADRs) visible to all.\n• Keep team size ≤ 9 (Brooks’ surgical team updated by Dunbar’s number).\n• Institutionalize refactoring sprints to avoid second-system bloat.\n• Measure lead time and cycle time; resist adding bodies to improve these metrics.\nSolutions Architect\n• Design for change: modular boundaries, API versioning, feature toggles.\n• Create “just enough” up-front architecture to enable autonomous squads (Agile) or to pass phase-gate reviews (Waterfall).\n• Prototype high-risk areas early; treat prototypes as executable specs.\n• Document trade-offs in lightweight, version-controlled artifacts.\nSoftware Developer\n• Expect to throw away code—write it so it’s cheap to delete (small functions, good tests).\n• Fight the second-system effect in your own pull requests: YAGNI.\n• Communicate: prefer pairing/mobbing over asynchronous docs when possible.\n• Track personal WIP limits to reduce context-switch overhead.\nExecutives / C-Suite\n• No silver bullet: budget for steady, continuous investment in tooling, training, and technical debt reduction.\n• Accept that initial estimates are distributions, not single numbers; use forecasting (Monte-Carlo) instead of deterministic dates.\n• Reward teams for sustainable pace and quality metrics, not heroics.\n• Understand that scaling with people is sub-linear; prefer product-line thinking and platform reuse over project staffing.\n──────────────────────────────────────── 5. One-Slide Recap “Adding people to a late project makes it later” is still true, but today we mitigate it with small, stable, cross-functional teams delivering thin vertical slices every iteration. Conceptual integrity remains non-negotiable, yet we achieve it through evolutionary architecture and continuous communication rather than heavyweight sign-offs. The essence of software—complexity, change, and invisibility—has not been silver-bulleted by 50 years of tools; disciplined process and human judgment still rule.\n"
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/mmm\/",
+                title: "Mythical Man Month",
+                description: "Example of a folder at the root of the content tree (under `/docs`)",
+                content: "Prompt linkProvide a summary of the key points of the book “the mythical man month”. Also Provide key points that were provided in the anniversary edition that were not in the original edition. Highlight lessons that still are valid today but with additional context and knowledge from agile vs waterfall software project delivery methods. Provide key learnings for the following roles: project manager, engineering manager, solutions architect, software developer, executives\n"
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/",
+                title: "Section Folder",
+                description: "Example of a folder at the root of the content tree (under `/docs`)",
+                content: ""
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+        
+    </body>
+</html>
